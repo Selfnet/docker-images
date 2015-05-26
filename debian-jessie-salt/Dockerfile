@@ -9,6 +9,7 @@ RUN wget -q -O - "http://mirror.selfnet.de/apt-mirror/debian.saltstack.com/debia
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     git \
+    rsyslog \
     salt-minion \
     python-dateutil \
     python-redis
